@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>meedlook профиль</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://getbootstrap.com/docs-assets/js/html5shiv.js"></script>
+      <script src="http://getbootstrap.com/docs-assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="navbar navbar-default">
+	<div class="container">
+  		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      				<span class="icon-bar"></span>
+      				<span class="icon-bar"></span>
+      				<span class="icon-bar"></span>
+    			</button>
+    			<a class="navbar-brand" href="customer_main.html" style="color: #428bca">meedlook</a>
+  		</div>
+  		<div class="navbar-collapse collapse navbar-responsive-collapse">
+			<ul class="nav navbar-nav">
+      				<li><a href="customer_main.html">портфель проектов</a></li>
+				<li><a href="customer_calendar.html">календарь</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right">
+      				<li><a href="customer_profile.html">профиль</a></li>
+    			</ul>
+  		</div>
+	</div>
+  </div>
+  <div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+  				<li class="active"><a href="#">анкета</a></li>
+				<li><a href="#">портфолио</a></li>
+			</ul>
+		</div>
+		<div class="col-md-6">
+			<div id="sec1">
+				<form class="form-horizontal">
+  					<fieldset>
+						<legend style="color: #428bca">личные данные</legend>
+    						<div class="form-group">
+      							<label for="name" class="col-md-4 control-label">имя</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="name">
+      							</div>
+    						</div>
+    						<div class="form-group">
+      							<label for="secondName" class="col-md-4 control-label">фамилия</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="secondName">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="thirdName" class="col-md-4 control-label">отчество</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="thirdName">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="birthday" class="col-md-4 control-label">дата рождения</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="birthday" placeholder="dd.mm.yyyy">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label class="col-md-4 control-label">пол</label>
+      							<div class="col-md-8">
+        							<div class="radio">
+          								<label>
+            									<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+            										мужчина
+          								</label>
+        							</div>
+        							<div class="radio">
+          								<label>
+            									<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            										женщина
+          								</label>
+        							</div>
+								<div class="radio">
+          								<label>
+            									<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+            										другой вариант =)
+          								</label>
+        							</div>
+      							</div>
+    						</div>
+						<button type="submit" class="btn btn-primary" style="position: relative; left: 80%">Submit</button>
+					</fieldset>
+				</form>
+				<form class="form-horizontal">
+  					<fieldset>
+						<legend style="color: #428bca">контактные данные</legend>
+						<div class="form-group">
+      							<label for="inputEmail" class="col-md-4 control-label">email</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="inputEmail">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="phone1" class="col-md-4 control-label">телефон</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="phone1" placeholder="х-ххх-ххх-хх-хх">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="phone1" class="col-md-4 control-label">социальные сети</label>
+      							<div class="col-md-8">
+      							</div>
+    						</div>
+						<button type="submit" class="btn btn-primary" style="position: relative; left: 80%">Submit</button>
+					</fieldset>
+				</form>
+			</div>
+			<div id="sec2" class="">
+				<form class="form-horizontal">
+  					<fieldset>
+						<legend style="color: #428bca">внешние данные</legend>
+    						
+    						<div class="form-group">
+      							<label for="height" class="col-md-4 control-label">рост</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="height" placeholder="см.">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="weight" class="col-md-4 control-label">вес</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="weight" placeholder="кг.">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="faceType" class="col-md-4 control-label">тип лица</label>
+      							<div class="col-md-8">
+        							<select class="form-control" id="faceType">
+          								<option>европейский</option>
+          								<option>азиатский</option>
+          								<option>африканский</option>
+          								<option>южно-американский</option>
+        							</select>
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="eyesColour" class="col-md-4 control-label">цвет глаз</label>
+      							<div class="col-md-8">
+        							<select class="form-control" id="eyesColour">
+          								<option>Голубые</option>
+          								<option>Зелёно-голубые</option>
+          								<option>Зелёно-карие</option>
+          								<option>Зелёные</option>
+          								<option>Карие</option>
+									<option>Серо-голубые</option>
+									<option>Серо-зеленые</option>
+									<option>Серые</option>
+        							</select>
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="hairColour" class="col-md-4 control-label">цвет волос</label>
+      							<div class="col-md-8">
+        							<select class="form-control" id="hairColour">
+          								<option>блондин</option>
+          								<option>брюнет</option>
+          								<option>каштановый</option>
+          								<option>русый</option>
+          								<option>рыже-каштановый</option>
+									<option>рыже-русый</option>
+									<option>рыжий</option>
+									<option>светло-каштановый</option>
+									<option>светло-русый</option>
+									<option>темно-русый</option>
+									<option>темный каштан</option>
+									<option>шатен</option>
+									<option>седые</option>
+        							</select>
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="hairLenght" class="col-md-4 control-label">длина волос</label>
+      							<div class="col-md-8">
+        							<select class="form-control" id="hairLenght">
+          								<option>лысый</option>
+          								<option>короткая стрижка</option>
+          								<option>до плеч</option>
+          								<option>средняя длина</option>
+          								<option>длинные</option>
+        							</select>
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="boobs" class="col-md-4 control-label">размер груди</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="boobs">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="chest" class="col-md-4 control-label">обхват груди</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="chest" placeholder="см.">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="waist" class="col-md-4 control-label">обхват талии</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="waist" placeholder="см.">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="hip" class="col-md-4 control-label">обхват бедер</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="hip" placeholder="см.">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="shoes" class="col-md-4 control-label">размер обуви</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="shoes" placeholder="размер обуви">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="clothes" class="col-md-4 control-label">размер одежды</label>
+      							<div class="col-md-8">
+        							<input type="text" class="form-control" id="clothes" placeholder="размер одежды">
+      							</div>
+    						</div>
+						<div class="form-group">
+      							<label for="textArea" class="col-md-4 control-label">Дополнительная информация о себе (татуировки, пирсинг, др.)</label>
+      							<div class="col-md-8">
+        							<textarea class="form-control" rows="3" id="textArea"></textarea>
+      							</div>
+    						</div>
+					<button type="submit" class="btn btn-primary" style="position: relative; left: 80%">Submit</button>
+					</fieldset>
+				</form>
+			</div>
+			<div id="sec3" class="">
+				<form class="form-horizontal">
+  					<fieldset>
+						<legend style="color: #428bca">виды работ</legend>
+						<div class="form-group">
+							<div class="col-md-6">
+      							<label for="workType" class="control-label">фото/видео</label>
+        							<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> съемка для календаря/каталога/журнала
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> креативная фотосессия
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> видеореклама
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> съемка в кино
+          								</label>
+        							</div>
+							<label for="workType" class="control-label">дефиле</label>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> дефиле
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> дефиле в нижнем белье/купальнике
+          								</label>
+        							</div>
+							<label for="workType" class="control-label">работа на выставке</label>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> работа на стенде
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> хостес
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> консультант
+          								</label>
+        							</div>
+							<label for="workType" class="control-label">работа на мероприятии</label>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> хостес
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> боди-арт
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> модель на мастер-класс
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> go-go
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> промо-акция
+          								</label>
+        							</div>
+							<label for="workType" class="control-label">Согласие на</label>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> съемка ню
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> изменение цвета волос
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> изменение длины волос
+          								</label>
+        							</div>
+      							</div>
+							<div class="col-md-3">
+							<label for="workType" class="control-label">Опыт:</label>
+							</div>
+							<div class="col-md-1">
+							<label for="workType" class="control-label">нет</label>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+        							</div>
+								<br>
+        							<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+        							</div>
+								<br>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
+        							</div>
+								<br>
+        							<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios8" value="option8">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios9" value="option9">
+        							</div>
+								<br>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios10" value="option10">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios11" value="option11">
+        							</div>
+        							<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios12" value="option12">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios13" value="option13">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios14" value="option14">
+        							</div>
+							</div>
+							<div class="col-md-1">
+							<label for="workType" class="control-label">мало</label>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+        							</div>
+								<br>
+        							<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+        							</div>
+								<br>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
+        							</div>
+								<br>
+        							<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios8" value="option8">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios9" value="option9">
+        							</div>
+								<br>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios10" value="option10">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios11" value="option11">
+        							</div>
+        							<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios12" value="option12">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios13" value="option13">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios14" value="option14">
+        							</div>
+							</div>
+							<div class="col-md-1">
+							<label for="workType" class="control-label">большой</label>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+        							</div>
+								<br>
+        							<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+        							</div>
+								<br>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
+        							</div>
+								<br>
+        							<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios8" value="option8">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios9" value="option9">
+        							</div>
+								<br>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios10" value="option10">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios11" value="option11">
+        							</div>
+        							<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios12" value="option12">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios13" value="option13">
+        							</div>
+								<div class="radio">
+            								<input type="radio" name="optionsRadios" id="optionsRadios14" value="option14">
+        							</div>
+							</div>
+    						</div>
+					<button type="submit" class="btn btn-primary" style="position: relative; left: 80%">Submit</button>
+					</fieldset>
+				</form>
+			</div>
+			<div id="sec4" class="">
+				<form class="form-horizontal">
+  					<fieldset>
+						<legend style="color: #428bca">иностранные языки</legend>
+						<div class="form-group">
+        							<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> английский
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> немецкий
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> французский
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> итальянский
+          								</label>
+        							</div>
+								<div class="checkbox">
+          								<label>
+            									<input type="checkbox"> китайский
+          								</label>
+        							</div>
+						</div>
+					<button type="submit" class="btn btn-primary" style="position: relative; left: 80%">Submit</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="col-md-3">
+		
+		</div>
+	</div>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

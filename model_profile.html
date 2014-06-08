@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>meedlook профиль</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://getbootstrap.com/docs-assets/js/html5shiv.js"></script>
+      <script src="http://getbootstrap.com/docs-assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="navbar navbar-default">
+	<div class="container">
+  		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      				<span class="icon-bar"></span>
+      				<span class="icon-bar"></span>
+      				<span class="icon-bar"></span>
+    			</button>
+    			<a class="navbar-brand" href="model_main.html" style="color: #428bca">meed<b>look</b></a>
+  		</div>
+  		<div class="navbar-collapse collapse navbar-responsive-collapse">
+    			<ul class="nav navbar-nav navbar-right">
+      				<li class="active"><a href="model_profile.html">Профиль</a></li>
+    			</ul>
+  		</div>
+	</div>
+  </div>
+  <div class="container">
+  
+  	<div class="col-md-3">
+  		<aside>
+  			<img src="/images/avatar.jpg" alt="avatar" class="img-circle">
+  			<hr>
+  			<ul class="nav nav-pills nav-stacked">
+	  			<li><a href="model_main.html">Лента Событий</a></li>
+	  			<li><a href="model_projects.html">Предложения</a></li>
+	  			<li><a href="model_calendar.html">Календарь</a></li>
+	  			<li><a href="#">Портфолио</a></li>
+			</ul>
+  		</aside>
+  	</div>
+  	
+  	<div class="col-md-6">
+  		<ul class="nav nav-tabs" style="margin-bottom: 15px;">
+  			<li class="active"><a href="#main" data-toggle="tab">Основное</a></li>
+  			<li class=""><a href="#contacts" data-toggle="tab">Контакты</a></li>
+  			<li class=""><a href="#look" data-toggle="tab">Внешность</a></li>
+  			<li class=""><a href="#job" data-toggle="tab">Виды работы</a></li>
+  			<li class=""><a href="#preferences" data-toggle="tab">Настройки</a></li>
+		</ul>
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade active in" id="main">
+				<form class="form-horizontal" role="form" action="http://idea-pixels.com/postInfo(Admin).php" method="post" name="main_form">
+					<div class="form-group">
+  						<label class="col-md-4 control-label" for="name">Имя</label>
+  						<div class="col-md-8">
+  							<input type="text" class="form-control" id="name" placeholder="Имя" name="name">
+  						</div>
+  					</div>
+  					<div class="form-group">	
+  						<label class="col-md-4 control-label" for="surname">Фамилия</label>
+  						<div class="col-md-8">
+  							<input type="text" class="form-control" id="surname" placeholder="Фамилия" name="surname">
+  						</div>
+  					</div>
+  					<div class="form-group">
+  						<label class="col-md-4 control-label">Пол</label>
+  						<div class="col-md-8">
+	  						<div class="radio-inline">
+		  						<label>
+		  							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+		  							Мужчина
+		  						</label>
+		  					</div>
+		  					<div class="radio-inline">
+			  					<label>
+			  						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+			  						Женщина
+			  					</label>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class="form-group">
+  						<label class="col-md-4 control-label" for="birthDate">Дата Рождения</label>
+  						<div class="col-md-8">
+  							<input type="date" class="form-control" id="birthDate" placeholder="дата рождения">
+  						</div>
+  					</div>
+  					<div class="form-group">
+  						<label class="col-md-4 control-label" for="inputCountry">Страна</label>
+  						<div class="col-md-8">
+  							<input type="text" class="form-control" id="inputCountry" placeholder="страна">
+  						</div>
+  					</div>
+  					<div class="form-group">
+  					<label class="col-md-4 control-label" for="inputCity">Город</label>
+  						<div class="col-md-8">
+  							<input type="text" class="form-control" id="inputCity" placeholder="город">
+  						</div>
+  					</div>
+  					<hr>
+  					<div class="form-group">
+  						<label class="col-md-4 control-label" for="inputLang">Иностранные языки</label>
+  						<div class="col-md-8">
+  							<input type="text" class="form-control" id="inputLang" placeholder="">
+  						</div>
+  					</div>
+  					<hr>
+  					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+			<div class="tab-pane fade" id="contacts">
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+  						<label class="col-md-4 control-label" for="inputEmail">Email</label>
+  						<div class="col-md-8">
+  							<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+  						</div>
+  					</div>
+  					<div class="form-group">
+  						<label class="col-md-4 control-label" for="inputPhoneNumber">Номер телефона</label>
+  						<div class="col-md-8">
+  							<input type="tel" class="form-control" id="inputPhoneNumber" placeholder="номер телефона">
+  						</div>
+  					</div>
+  					<div class="form-group">
+  					<label class="col-md-4 control-label" for="socialAccount1">Профиль в VK</label>
+  						<div class="col-md-8">
+  							<input type="url" class="form-control" id="socialAccount1" placeholder="ссылка на профиль">
+  						</div>
+  					</div>
+  					<div class="form-group">
+  					<label class="col-md-4 control-label" for="socialAccount2">Профиль в Fb</label>
+  						<div class="col-md-8">
+  							<input type="url" class="form-control" id="socialAccount2" placeholder="ссылка на профиль">
+  						</div>
+  					</div>
+  					<div class="form-group">
+  					<label class="col-md-4 control-label" for="socialAccount3">Профиль в Instagram</label>
+  						<div class="col-md-8">
+  							<input type="url" class="form-control" id="socialAccount3" placeholder="ссылка на профиль">
+  						</div>
+  					</div>
+  					<hr>
+  					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+			<div class="tab-pane fade" id="look">
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+  					<label class="col-md-4 control-label" for="inputHeight">Рост</label>
+  					<div class="col-md-4">
+  						<input type="number" class="form-control" id="inputHeight" placeholder="рост в см.">
+  					</div>
+  				</div>
+  				<div class="form-group">
+  					<label class="col-md-4 control-label" for="inputWeight">Вес</label>
+  					<div class="col-md-4">
+  						<input type="number" class="form-control" id="inputWeight" placeholder="вес в кг.">
+  					</div>
+  				</div>
+  				<div class="form-group">
+  					<label class="col-md-4 control-label" for="inputChest">Грудь</label>
+  					<div class="col-md-4">
+  						<input type="number" class="form-control" id="inputChest" placeholder="объем в см.">
+  					</div>
+  				</div>
+  				<div class="form-group">
+  					<label class="col-md-4 control-label" for="inputWaist">Талия</label>
+  					<div class="col-md-4">
+  						<input type="number" class="form-control" id="inputWaist" placeholder="объем в см.">
+  					</div>
+  				</div>
+  				<div class="form-group">
+  					<label class="col-md-4 control-label" for="inputHips">Бедра</label>
+  					<div class="col-md-4">
+  						<input type="number" class="form-control" id="inputHips" placeholder="объем в см.">
+  					</div>
+  				</div>
+  				<div class="form-group">
+  					<label class="col-md-4 control-label" for="inputClothes">Размер одежды</label>
+  					<div class="col-md-4">
+  						<input type="number" class="form-control" id="inputClothes" placeholder="">
+  					</div>
+  				</div>
+  				<div class="form-group">
+  					<label class="col-md-4 control-label" for="inputShoes">Размер обуви</label>
+  					<div class="col-md-4">
+  						<input type="number" class="form-control" id="inputShoes" placeholder="">
+  					</div>
+  				</div>
+  				<hr>
+  				<div class="form-group">
+  					<label for="facetype" class="col-md-4 control-label">Тип лица</label>
+  					<div class="col-md-8">
+	  					<select class="form-control" id="facetype">
+		  					<option>Европейский</option>
+		  					<option>Азиатский</option>
+		  					<option>Африканский</option>
+		  					<option>Другой</option>
+		  				</select>
+		  			</div>
+  				</div>
+  				<div class="form-group">
+  					<label for="eyecolor" class="col-md-4 control-label">Цвет глаз</label>
+  					<div class="col-md-8">
+	  					<select class="form-control" id="eyecolor">
+		  					<option>Голубые</option>
+		  					<option>Зелено-голубые</option>
+		  					<option>Зелено-карие</option>
+		  					<option>Зеленые</option>
+		  					<option>Карие</option>
+		  					<option>Серо-голубые</option>
+		  					<option>Серо-зеленые</option>
+		  					<option>Серые</option>
+		  				</select>
+		  			</div>
+  				</div>
+  				<div class="form-group">
+  					<label for="haircolor" class="col-md-4 control-label">Цвет волос</label>
+  					<div class="col-md-8">
+	  					<select class="form-control" id="haircolor">
+		  					<option>Блондин</option>
+		  					<option>Брюнет</option>
+		  					<option>Каштановый</option>
+		  					<option>Русый</option>
+		  					<option>Рыже-каштановый</option>
+		  					<option>Рыже-русый</option>
+		  					<option>Рыжий</option>
+		  					<option>Светло-каштановый</option>
+		  					<option>Светло-русый</option>
+		  					<option>Тёмно-русый</option>
+		  					<option>Тёмный каштан</option>
+		  					<option>Шатен</option>
+		  					<option>Другой</option>
+		  				</select>
+		  			</div>
+  				</div>
+  				<div class="form-group">
+  					<label for="hairlength" class="col-md-4 control-label">Длина волос</label>
+  					<div class="col-md-8">
+	  					<select class="form-control" id="hairlength">
+		  					<option>Лысый</option>
+		  					<option>Короткая стрижка</option>
+		  					<option>До плеч</option>
+		  					<option>Средняя длина</option>
+		  					<option>Длинные</option>
+		  				</select>
+		  			</div>
+  				</div>
+  				<hr>
+  				<div class="form-group">
+  					<label for="additInfo" class="col-md-4 control-label">Тату, пирсинг</label>
+  					<div class="col-md-8">
+	  					<textarea class="form-control" rows="3" id="additInfo"></textarea>
+  					</div>
+  				</div>
+  				<hr>
+  				<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+			<div class="tab-pane fade" id="job">
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<div class="col-md-6">
+							<label for="setPrice" class="col-md-6 control-label">Укажите цену за час работы</label>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="setPrice" placeholder="рублей в час">
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label >
+									<input type="checkbox">Дефиле
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="jobPrice1" placeholder="рублей в час">
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label >
+									<input type="checkbox">Съемка для каталогов
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="jobPrice2" placeholder="рублей в час">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label >
+									<input type="checkbox">Съемка рекламы
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="jobPrice3" placeholder="рублей в час">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label >
+									<input type="checkbox">Массовка
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="jobPrice4" placeholder="рублей в час">
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label >
+									<input type="checkbox">Работа на выставочном стенде
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="jobPrice5" placeholder="рублей в час">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label >
+									<input type="checkbox">Промо-акции
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="jobPrice6" placeholder="рублей в час">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label >
+									<input type="checkbox">Консультации в местах продаж
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="jobPrice7" placeholder="рублей в час">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label >
+									<input type="checkbox">HoReCa (Модель для клуба)
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="jobPrice8" placeholder="рублей в час">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label >
+									<input type="checkbox">Боди-арт
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="jobPrice9" placeholder="рублей в час">
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label >
+									<input type="checkbox">Event-хостес (корпоратив/конференция)
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="jobPrice10" placeholder="рублей в час">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label >
+									<input type="checkbox">Демонстрация продукта (презентация/мастер-класс)
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="jobPrice11" placeholder="рублей в час">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label >
+									<input type="checkbox">Долгосрочная работа (Секретарь/консультант/хостес)
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<input type="number" class="form-control" id="jobPrice12" placeholder="рублей в час">
+						</div>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="setAgreement" class="col-md-4 control-label">Согласие на:</label>
+						<div class="col-md-8">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Дефиле/съемка в нижнем белье
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Изменение цвета/длины волос
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Съемка ню
+								</label>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+			<div class="tab-pane fade" id="preferences">
+				<form class="form-horizontal" role="form">
+					
+				</form>
+			</div>
+		</div>
+	</div>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
